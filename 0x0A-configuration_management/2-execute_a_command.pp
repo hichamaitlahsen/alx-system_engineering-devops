@@ -1,6 +1,7 @@
 # kill process killmenow
 
-exec [ 'pkill':
-comand => 'pkill killmenow',
-provider => 'shell',
+exec [ 'killmenow':
+ command => '/usr/bin/pkill killmenow',
+ provider => 'shell',
+ returns => [0,1],
 ]
