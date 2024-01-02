@@ -1,4 +1,4 @@
-i#!/usr/bin/python3
+#!/usr/bin/python3
 
 """
 Python script that, using a REST API, for a given employee ID,
@@ -30,8 +30,7 @@ if __name__ == "__main__":
                 completed += 1
                 tasks.append(i.get('title'))
 
-    print("Employee {} is done with tasks({}/{}):".format(employee, completed,
-                                                          total))
+    print("Employee {} is done with tasks({}/{}):".format(employee, completed, total))
 
     for i in tasks:
         print("\t {}".format(i))
