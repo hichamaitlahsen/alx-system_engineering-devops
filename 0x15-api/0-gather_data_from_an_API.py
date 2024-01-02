@@ -26,7 +26,7 @@ if __name__ == "__main__":
         if i.get('userId') == int(argv[1]):
             total += 1
 
-        if i.get('completed') is True:
+            if i.get('completed') is True:
                 completed += 1
                 tasks.append(i.get('title'))
 
